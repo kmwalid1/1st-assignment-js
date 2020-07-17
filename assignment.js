@@ -40,28 +40,26 @@ console.log("Total needed :", total , "cb ft(cubic feet) to make those furniture
 //           It takes 1000 brick to make 1 feet.
  
 
-// function brickCalculator(floor){
-//     var firstFloorBricks  = 15*1000;
-//     var secondFloorBricks = 12*1000;
-//     var thirdFloorBricks  = 10*1000;
-     
 
-//     var firstFloors  = [1,2,3,4,5,6,7,8,9,10];
-//     var secondFloors = [11,12,13,14,15,16,17,18,19,20];
-//     var thirdFloors  = [];
+function brickCalculator(n){
+    var firstFloor, secondFloor, thirdFloor
+    if(n <= 10){
+      return firstFloor = 15000 * n;
+    }else if(n >= 11 && n <= 20 ){
+        return secondFloor = (12000 * n)+ 30000 ;
+    }else{
+        return thirdFloor = (10000 * n) +70000;
+    }
+    }
 
-//     for(i=0, i < (firstFloors.length,secondFloors.length), i++ ){
-
-//     }
-// }
-// var result = brickCalculator(14);
-// console.log(result);
+    console.log("Bricks needed :", brickCalculator(20));
 
 
 //  --------------------------------------- [ #SOLVED ]-------------------------------------------------
 
 
 
+  
 
 
 // Problem-04: Find the shortest name form an Array.
@@ -80,7 +78,7 @@ function tinyFriend(name){
 }
 
 var smallestName =[ "sumon" , "rifa" , "kmWalid" , "oli", "raju"];
-console.log(tinyFriend(smallestName));
+console.log("The shortest name is :" , tinyFriend(smallestName));
 
 //  --------------------------------------- [ #SOLVED ]-------------------------------------------------
 

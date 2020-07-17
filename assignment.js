@@ -1,13 +1,13 @@
 // Problem-01: Feet to Mile.
 //             13200 feet = ?
 
-// function feetToMile(feet){
-//     var mile = feet/5280;
-//     return mile;
-// }
+function feetToMile(feet){
+    var mile = feet/5280;
+    return mile;
+}
 
-// var result = feetToMile(13200);
-// console.log("13200 Feet =", result,"mile");
+var result = feetToMile(13200);
+console.log("13200 Feet =", result,"mile");
 
 //  --------------------------------------- [ #SOLVED ]-------------------------------------------------
 
@@ -21,13 +21,13 @@
 //             So,Total How much cu ft needed to make 6 chairs,2 tables and 3 beds?
 
 
-// function woodCalculator(chair,table,bed){
-//     var sum = ( chair*1 + table*3 + bed*5 );
-//     return sum;
-// }
+function woodCalculator(chair,table,bed){
+    var sum = ( chair*1 + table*3 + bed*5 );
+    return sum;
+}
 
-// var total = woodCalculator(6,2,3);
-// console.log("Total needed :", total , "cb ft(cubic feet) to make those furniture." );
+var total = woodCalculator(6,2,3);
+console.log("Total needed :", total , "cb ft(cubic feet) to make those furniture." );
 
 //  --------------------------------------- [ #SOLVED ]-------------------------------------------------
 
@@ -61,22 +61,28 @@
 //  --------------------------------------- [ #SOLVED ]-------------------------------------------------
 
 
+
+
+
 // Problem-04: Find the shortest name form an Array.
 
 
 function tinyFriend(name){
-    var smallName = name[0].length;
-    for(var i = 0; i <name.length; i++){
+
+    var tinyName = name[0];
+    for(var i = 0; i < name.length; i++){
         var currentName = name[i];
-        if(currentName.length < smallName){
-            smallName.length = currentName.length;
+        if( currentName.length < tinyName.length){
+            tinyName = currentName ;
         }
     }
-    return smallName;
+    return tinyName;
 }
 
-var smallestName =tinyFriend(["oli","sultana","sihab","No","Sadi"]);
-console.log(smallestName);
+var smallestName =[ "sumon" , "rifa" , "kmWalid" , "oli", "raju"];
+console.log(tinyFriend(smallestName));
+
+//  --------------------------------------- [ #SOLVED ]-------------------------------------------------
 
 
 
